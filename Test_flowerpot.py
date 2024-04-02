@@ -3,9 +3,14 @@ from Flowerpot_Engine import*
 
 
 # This program is for testing all functions of the smart flowerpot
+lightTime = 5
 
-
-try:   
+try:
+    # rotate base
+    # if (light > 50 and eplaspedTime > 60*60):
+        # rotate base
+    # else
+        # reset elapsed time to zero
     # Read light sensor (CH0 of the A/D)
     ans = input('\nRead light sensor (y/n)? ')
     if ans == 'y':
