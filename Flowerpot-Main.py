@@ -1,80 +1,78 @@
 import time
 from Flowerpot_Engine import*
 
-# The following global variables pertain to the Light-to-Base-Rotation functionality
-start_time = time.time()
-end_time = 0
-elapsed_time = 0
-rotateBaseDelay = 2 # delay of light sensor measurement in seconds
-rotateBaseLightThreshold = 50.00 # light sensor threshold for rotating plant base
-rotateBaseLightDegrees = 2 # amount of rotation per rotateBaseDelay in degrees
-rotateDefaultDirection = True # set the  base rotation direction
-rotateBaseDirection = 'CW'
-Left_Limit = False
-Right_Limit = False
-
 #home_base()
 led_ON()
 
+delay = 60 # delay in seconds
+rotateBaseDirection = 'CW'
+rotateBaseDegrees = 1
+
+previousRun = time.time()
+now = time.time()
+
+rotateBaseLightThreshold = 20
 
 i=0 #seconds that the pump has run
-percentSoilMoisture = read_SoilMoisture()
 
-MinSoilMoisture = 10
+
+MinSoilMoisture = 90
 WaterLevel = read_WaterLevel()
-pumpRunTime = 2
+pumpRunTime = 1
 maxPumpRunTime = 20
+
+
+
 print("Setup Complete")
 
 try:
     while True:
-        # rotate base every so often if light value is continously above 50%
+    
         percentLight = read_Light()
-        print(percentLight)
-        print(start_time)
-        elapsed_time = end_time - start_time
-        measureLightMillis = start_time
-        if (percentLight > rotateBaseLightThreshold) and ((start_time - end_time) > rotateBaseDelay):
-            print(elapsed_time)
-            print("Proceeding...")
+        # print("read light")
+        # print(percentLight)
+        
+        now = time.time()
+        # print(now)
+        
+        # Check elpased time for base rotation funtion
+        if (percentLight > rotateBaseLightThreshold) and ((now - previousRun > delay)):
+            previousRun = now
+            # print(previousRun)
+            if(read_RightLim() or read_LeftLim()):
+                print("limit reached")
+                if (rotateBaseDirection == 'CCW'):
+                    rotateBaseDirection = 'CW'
+                    
+                    rotateBase(10, rotateBaseDirection, 's', 'half')
+                    
+                elif (rotateBaseDirection == 'CW'):
+                    rotateBaseDirection = 'CCW'
 
-                # rotate base if 1) light, 2) elapsed time, and 3) limit state conditions are met
-                # base rotation is always slow here and in half-step mode
+                    rotateBase(10, rotateBaseDirection, 's', 'half')
                 
-            rotateBase(rotateBaseLightDegrees, rotateBaseDirection, 's', 'half')
-            print('rotating')
-            print(rotateBaseDirection)
+            else:
+                print("rotating")
                 
-            Left_Limit = read_LeftLim()
-            Right_Limit = read_RightLim()
+                rotateBase(rotateBaseDegrees, rotateBaseDirection, 's', 'half')
+
+        percentSoilMoisture = read_SoilMoisture()
+        print(percentSoilMoisture)
+        # Moisture Control part
+        if (percentSoilMoisture < MinSoilMoisture) and (i < maxPumpRunTime):
+            pump_ON()
+            time.sleep(pumpRunTime)
+            pump_OFF()
+            time.sleep(2)
+            i=i+pumpRunTime
+            print(f'The pump has run for {i} seconds')
             
-            if (Left_Limit or Right_Limit):
-                if (rotateDefaultDirection):
-                    rotateBaseDirection = 'CCW'   # set counterclockwise direction if value is:   True
-                    rotateDefaultDirection = ~rotateDefaultDirection
-                elif (~rotateDefaultDirection):
-                    rotateBaseDirection = 'CW'  # set counterclockwise direction if value is:  not True
-                    rotateDefaultDirection = ~rotateDefaultDirection # change direction if limit is reached
-        else:
-            end_time = time.time()
-            elapsed_time = 0
-            print(elapsed_time)
-            time.sleep(5)
-        
-        
-    #     # Moisture Control part
-    #     if (percentSoilMoisture < MinSoilMoisture) and (i < maxPumpRunTime):  #change the 20 and the 10
-    #         pump_ON()
-    #         sleep(pumpRunTime) #might need to change the 2 seconds
-    #         pump_OFF()
-    #         sleep()
-    #         i=i+pumpRunTime
-    #         print(f'The pump has run for {i} seconds')
-    #     if (i > maxPumpRunTime) or (WaterLevel == "empty"):  #change the 20
-    #         print('The resevoir needs to be refilled')
-    #         i=0
-
+        if (i > maxPumpRunTime) or (WaterLevel == "empty"):
+            
+            print('The resevoir needs to be refilled')
+            i=0
 
 except KeyboardInterrupt:
     GPIO.cleanup()
     print('\nBye...')
+    
