@@ -1,7 +1,7 @@
 import time
 from Flowerpot_Engine import*
 
-LightThreshold = 20 # light sensor threshold in percent (%)
+lightThreshold = 20 # light sensor threshold in percent (%)
 rotateBaseDirection = 'CW' # Set initial direction to clockwise
 rotateBaseDegrees = 1 # Base rotation amount per interval; keep this amount low
 
@@ -17,7 +17,7 @@ totalPumpTime = 0 # seconds that the pump has run; for measuring if water needs 
 maxPumpTime = 20 # when the pump theoretically runs out of water
 pumpRunTime = 1 # Amount of time the pump will run per interval
 
-MoistureThreshold = 90 # Threshold value for soil moisture
+moistureThreshold = 90 # Threshold value for soil moisture
 
 # Check that there is water in the tank before proceeding
 waterLevel = read_WaterLevel()
@@ -50,7 +50,7 @@ try:
         # print(WaterLevel)
         
         # Check to run the base rotation
-        if (percentLight > LightThreshold) and ((now - previousBaseRun > baseDelay)):
+        if (percentLight > lightThreshold) and ((now - previousBaseRun > baseDelay)):
             previousBaseRun = now
             # Check if limits have been reached
             if(read_RightLim() or read_LeftLim()):
@@ -68,7 +68,7 @@ try:
                 rotateBase(rotateBaseDegrees, rotateBaseDirection, 's', 'half') # rotate base per defined variables
                 
         # Check to run the pump
-        if (percentSoilMoisture > MoistureThreshold) and ((now - previousPumpRun > pumpDelay)) and (waterLevel == "full"):
+        if (percentSoilMoisture > moistureThreshold) and ((now - previousPumpRun > pumpDelay)) and (waterLevel == "full"):
             # Moisture Control part
             print("Pumping...")
             pump_ON()
