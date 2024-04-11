@@ -2,7 +2,26 @@ import RPi.GPIO as GPIO
 from StepperMotor_Class import StepperMotor
 import time, AHT20, ADC_PCF8591
 
+from PCF8591_class import PCF8591
+import paho.mqtt.client as MyMqtt
+import json, time
 
+# Initialize GPIO
+GPIO.setmode(GPIO.BOARD)    # Number GPIOs by header pin locations
+GPIO.setwarnings(False)     # Turn of GPIO warnings
+
+pump = {"PumpRunning": False}
+
+# Initialize variables and MQTT details
+iot_hub = "demo.thingsboard.io"
+port = 1883
+username = "hb7xsqngvnn93d6stmum"               # <==== Enter your device token from TB here
+password = ""
+TelemetryTopic = "v1/devices/me/telemetry"
+RPCrequestTopic = 'v1/devices/me/rpc/request/+'
+AttributesTopic = "v1/devices/me/attributes"
+
+rotateBaseDirection = 'CW'
 
 # This module contains all initializations and functions
 # for the smart Flowerpot
@@ -57,7 +76,37 @@ GPIO.setup(LeftLim, GPIO.IN, pull_up_down=GPIO.PUD_UP)   # Set pin mode as input
 # Initialize Right limit switch
 GPIO.setup(RightLim, GPIO.IN, pull_up_down=GPIO.PUD_UP)   # Set pin mode as input
 
+# MQTT on_connect callback function
+def on_connect(client, userdata, flags, rc):
+    print("rc code:", rc)
+    client.subscribe(RPCrequestTopic)
+    client.publish(AttributesTopic, json.dumps(pump), 1)
 
+
+# MQTT on_message callback function
+def on_message(client, userdata, msg):
+    if msg.topic.startswith('v1/devices/me/rpc/request/'):
+        data = json.loads(msg.payload)
+        if data['method'] == 'setValue':
+            params = data['params']
+            # Turn the pump on/off
+            setValue(params)
+
+# Function will set the Pump value
+def setValue(params):
+    if params == True:
+        # Turn pump ON
+        GPIO.output(PumpPin, GPIO.HIGH)
+        pump['PumpRunning'] = True
+        # Update the ClientAttribute "PumpRunning" on the TB dashboard
+        client.publish(AttributesTopic, json.dumps(pump), 1)
+
+    elif params == False:
+        # Turn pump OFF
+        GPIO.output(PumpPin, GPIO.LOW)
+        pump['PumpRunning'] = False
+        # Update the ClientAttribute "PumpRunning" on the TB dashboard
+        client.publish(AttributesTopic, json.dumps(pump), 1)
 
 def button_callback(ButtonPin):
     # Read button
@@ -214,3 +263,7 @@ def rotateBase(degrees, direction, speed, mode):
 
  # Turn off all pins (to prevent heating of the motor and driver)
     GPIO.output(BaseMotor.pins, [0,0,0,0])
+    
+    
+
+
