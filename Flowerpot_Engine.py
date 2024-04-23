@@ -5,12 +5,13 @@ import time, AHT20, ADC_PCF8591
 from PCF8591_class import PCF8591
 import paho.mqtt.client as MyMqtt
 import json, time
+import requests
 
 # Initialize GPIO
 GPIO.setmode(GPIO.BOARD)    # Number GPIOs by header pin locations
 GPIO.setwarnings(False)     # Turn of GPIO warnings
 
-pump = {"PumpRunning": False}
+pump = False
 
 # Initialize variables and MQTT details
 iot_hub = "demo.thingsboard.io"
@@ -80,8 +81,7 @@ GPIO.setup(RightLim, GPIO.IN, pull_up_down=GPIO.PUD_UP)   # Set pin mode as inpu
 def on_connect(client, userdata, flags, rc):
     print("rc code:", rc)
     client.subscribe(RPCrequestTopic)
-    client.publish(AttributesTopic, json.dumps(pump), 1)
-
+    client.publish(AttributesTopic, json.dumps({"PumpRunning": pump}), 1)
 
 # MQTT on_message callback function
 def on_message(client, userdata, msg):
@@ -97,16 +97,16 @@ def setValue(params):
     if params == True:
         # Turn pump ON
         GPIO.output(PumpPin, GPIO.HIGH)
-        pump['PumpRunning'] = True
+        pump = True
         # Update the ClientAttribute "PumpRunning" on the TB dashboard
-        client.publish(AttributesTopic, json.dumps(pump), 1)
+        client.publish(AttributesTopic, json.dumps({"PumpRunning": pump}), 1)
 
     elif params == False:
         # Turn pump OFF
         GPIO.output(PumpPin, GPIO.LOW)
-        pump['PumpRunning'] = False
+        pump = False
         # Update the ClientAttribute "PumpRunning" on the TB dashboard
-        client.publish(AttributesTopic, json.dumps(pump), 1)
+        client.publish(AttributesTopic, json.dumps({"PumpRunning": pump}), 1)
 
 def button_callback(ButtonPin):
     # Read button
@@ -140,9 +140,9 @@ def read_Light():
 def read_WaterLevel():
     # Read water level sensor (T/F)
     if GPIO.input(WaterLevelPin):
-        return "full"
+        return False
     elif not GPIO.input(WaterLevelPin):
-        return "empty"
+        return True
      
      
 def read_SoilMoisture():
@@ -167,7 +167,7 @@ def pump_ON():
 
 
 def pump_OFF():
-    # Turn the pump off
+    # Turn the pump offpump
     GPIO.output(PumpPin, GPIO.LOW)
     return False
 
@@ -264,6 +264,29 @@ def rotateBase(degrees, direction, speed, mode):
  # Turn off all pins (to prevent heating of the motor and driver)
     GPIO.output(BaseMotor.pins, [0,0,0,0])
     
+def getWeather():
+
+    # Weather station at the PDX Airport
+    latitude = '45.5958'
+    longitude = '-122.6093'
+    office = 'PQR'
+    gridX = '115'
+    gridY = '106'
+
+    # URL and query elements for the NOAA Web site
+    base_url = 'https://api.weather.gov/gridpoints/'
+    full_url = base_url + office + '/' + gridX + ',' + gridY + '/forecast'
+
+
+    # GET the response from the NWS server
+    WeatherData = requests.get(full_url)
+    # print(WeatherData.text)
     
 
-
+    with open('WeatherData.json', 'r') as f:
+        WeatherData = json.load(f)
+        
+    name = WeatherData['properties']['periods'][0]['name']
+    temp = WeatherData['properties']['periods'][0]['temperature']
+    value = WeatherData['properties']['periods'][0]['relativeHumidity']['value']
+    print(f'Name = {name}, Temp = {temp}, Humidity = {value}')
