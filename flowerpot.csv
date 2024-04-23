@@ -1,0 +1,234 @@
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+1,69.41,79.6858139038086,14.5981788635254,38.04,False,0,False,2024-04-18 15:37:36.358349
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+2,63.14,81.4525527954102,14.6195411682129,38.04,False,0,False,2024-04-18 16:37:37.521112
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+3,59.22,82.0701904296875,14.2694473266602,38.04,False,0,False,2024-04-18 17:37:38.418306
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+4,50.2,81.74609375,13.2242202758789,38.43,False,0,False,2024-04-18 18:37:39.375232
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+5,23.53,80.4431838989258,12.8657341003418,38.04,False,0,False,2024-04-18 19:37:39.596707
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+6,0,80.4654998779297,13.0382537841797,38.04,False,0,False,2024-04-18 20:37:40.470350
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+7,0,80.4157180786133,13.2774353027344,38.04,False,0,False,2024-04-18 21:37:41.399087
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+8,0,80.0136871337891,13.95263671875,38.04,False,0,False,2024-04-18 22:37:42.420859
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+9,0,79.8464889526367,14.3512725830078,38.04,False,0,False,2024-04-18 23:37:43.561898
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+10,0,79.7125930786133,14.5529747009277,38.04,False,0,False,2024-04-19 00:37:44.651051
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+11,0,79.5062561035156,14.4125938415527,38.04,False,0,False,2024-04-19 01:37:44.679530
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+12,0,79.2312545776367,15.0431632995605,38.04,False,0,False,2024-04-19 02:37:44.689258
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+13,0,79.1104049682617,14.8885726928711,38.04,False,0,False,2024-04-19 03:37:44.911459
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+14,0,78.9758224487305,15.8470153808594,38.04,False,0,False,2024-04-19 04:37:45.303267
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+15,0,80.0775451660156,15.296459197998,38.04,False,0,False,2024-04-19 05:37:45.761674
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+16,23.14,80.6340713500977,15.3189659118652,38.04,False,0,False,2024-04-19 06:37:46.428625
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+17,55.69,81.1473388671875,15.3012275695801,38.04,False,0,False,2024-04-19 07:37:47.080715
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+18,71.37,81.5857620239258,15.4950141906738,38.04,False,0,False,2024-04-19 08:37:48.182349
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+19,80.39,81.8315811157227,15.7584190368652,38.04,False,0,False,2024-04-19 09:37:49.482725
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+20,82.35,81.8257446289062,15.5276298522949,38.04,False,0,False,2024-04-19 10:37:50.653479
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+21,72.94,82.0022125244141,15.3271675109863,38.04,False,0,False,2024-04-19 11:37:51.793452
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+22,75.69,81.4947814941406,15.2192115783691,38.04,False,0,False,2024-04-19 12:37:52.726005
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+23,74.9,80.9636611938477,15.4516220092773,38.04,False,0,False,2024-04-19 13:37:53.478294
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+24,74.9,81.0117263793945,15.4570579528809,38.04,False,0,False,2024-04-19 14:37:54.081847
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+25,76.47,80.9159393310547,15.4671669006348,38.04,False,0,False,2024-04-19 15:37:54.917005
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+26,73.33,81.4601058959961,15.2376174926758,38.04,False,0,False,2024-04-19 16:37:55.432521
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+27,66.67,81.3759918212891,15.2617454528809,38.82,False,0,False,2024-04-19 17:37:55.898010
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+28,44.71,81.1974639892578,15.2458190917969,38.04,False,0,False,2024-04-19 18:37:56.016744
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+29,21.18,80.8211822509766,15.291690826416,38.04,False,0,False,2024-04-19 19:37:56.368383
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+30,0,80.984260559082,15.1803016662598,38.04,False,0,False,2024-04-19 20:37:57.350199
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+31,0,81.1552352905273,15.6707763671875,38.04,False,0,False,2024-04-19 21:37:58.222644
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+32,0,80.9228057861328,15.5632019042969,38.04,False,0,False,2024-04-19 22:37:59.218612
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+33,0,80.6742401123047,15.7585144042969,38.04,False,0,False,2024-04-19 23:38:00.101269
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+34,0,80.5540771484375,15.8280372619629,38.04,False,0,False,2024-04-20 00:38:00.886179
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+35,0,80.3745193481445,16.3111686706543,38.04,False,0,False,2024-04-20 01:38:01.537566
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+36,0,80.2251739501953,16.5061950683594,38.04,False,0,False,2024-04-20 02:38:02.123562
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+37,0,80.1455230712891,16.3045883178711,38.04,False,0,False,2024-04-20 03:38:02.643705
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+38,0,79.9055404663086,17.2801971435547,38.04,False,0,False,2024-04-20 04:38:03.108102
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+39,0,79.6604080200195,17.2022819519043,38.04,False,0,False,2024-04-20 05:38:03.490602
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+40,21.57,79.6449584960938,16.9109344482422,38.04,False,0,False,2024-04-20 06:38:03.867919
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+41,47.45,79.8564453125,17.9733276367188,38.04,False,0,False,2024-04-20 07:38:04.997547
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+42,61.18,80.2728958129883,17.3463821411133,38.04,False,0,False,2024-04-20 08:38:05.717048
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+43,73.73,80.4476470947266,17.6697731018066,38.04,False,0,False,2024-04-20 09:38:06.007314
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+44,80,80.8366317749023,17.9096221923828,38.04,False,0,False,2024-04-20 10:38:06.300269
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+45,83.92,81.5586395263672,17.9768562316895,38.04,False,0,False,2024-04-20 11:38:06.422164
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+46,97.65,82.2700042724609,17.8373336791992,38.04,False,0,False,2024-04-20 12:38:06.918202
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+47,98.43,82.8028411865234,18.0006980895996,38.04,False,0,False,2024-04-20 13:38:06.965505
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+48,97.65,82.1494979858398,18.565559387207,38.04,False,0,False,2024-04-20 14:38:07.088467
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+49,96.47,83.6192626953125,18.1147575378418,38.04,False,0,False,2024-04-20 15:38:07.157708
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+50,34.12,82.7008743286133,18.8603401184082,38.04,False,0,False,2024-04-20 16:38:07.246201
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+51,11.37,82.7657623291016,18.9418792724609,38.04,False,0,False,2024-04-20 17:38:07.369061
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+52,31.76,82.533332824707,20.1881408691406,38.04,False,0,False,2024-04-20 18:38:08.389974
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+53,21.96,82.4670715332031,20.3324317932129,38.04,False,0,False,2024-04-20 19:38:08.511939
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+54,0,82.1072692871094,20.5120086669922,38.04,False,0,False,2024-04-20 20:38:09.795178
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+55,0,81.7162246704102,20.4729080200195,38.04,False,0,False,2024-04-20 21:38:11.082081
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+56,0,81.5195007324219,20.991039276123,38.04,False,0,False,2024-04-20 22:38:11.086589
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+57,0,81.2482757568359,21.1930274963379,38.04,False,0,False,2024-04-20 23:38:12.358679
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+58,0,81.0275192260742,21.1871147155762,38.04,False,0,False,2024-04-21 00:38:13.552184
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+59,0,80.7380981445312,20.7752227783203,38.04,False,0,False,2024-04-21 01:38:14.659000
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+60,0,80.4751129150391,20.9855079650879,38.04,False,0,False,2024-04-21 02:38:15.779105
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+61,0,80.2989883422852,21.5212821960449,38.04,False,0,False,2024-04-21 03:38:16.866637
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+62,0,79.9233932495117,21.5524673461914,38.82,False,0,False,2024-04-21 04:38:17.878685
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+63,0,79.7119064331055,21.6583251953125,38.43,False,0,False,2024-04-21 05:38:18.891428
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+64,18.04,79.6799774169922,21.1117744445801,38.04,False,0,False,2024-04-21 06:38:19.827980
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+65,63.14,80.0428695678711,20.6967353820801,38.04,False,4,False,2024-04-21 07:38:20.685400
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+66,96.86,80.3305740356445,20.7071304321289,38.43,False,8,False,2024-04-21 08:38:21.677362
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+67,76.08,80.7071990966797,20.7322120666504,38.43,False,12,False,2024-04-21 09:38:22.609696
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+68,97.25,81.141845703125,20.8183288574219,38.82,False,16,False,2024-04-21 10:38:23.430184
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+69,98.43,81.8260879516602,20.7479476928711,38.82,False,16,False,2024-04-21 11:38:24.437897
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+70,97.25,82.3215026855469,20.7382202148437,38.82,False,20,False,2024-04-21 12:38:25.741939
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+71,91.37,82.7602691650391,20.5782890319824,39.22,False,20,False,2024-04-21 13:38:26.632208
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+72,97.65,83.0043716430664,20.5294609069824,39.22,False,20,False,2024-04-21 14:38:27.745284
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+73,96.47,83.1005020141602,20.5851554870605,39.22,False,20,False,2024-04-21 15:38:28.552944
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+74,97.25,82.8073043823242,20.8544731140137,39.22,False,20,False,2024-04-21 16:38:29.708132
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+75,73.73,82.3015899658203,21.1812019348145,39.22,False,20,False,2024-04-21 17:38:30.478971
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+76,54.12,82.6253433227539,21.4838981628418,39.22,False,20,False,2024-04-21 18:38:31.418689
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+77,25.88,82.7558059692383,21.3618278503418,39.22,False,20,False,2024-04-21 19:38:31.937324
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+78,0,82.3451919555664,21.7228889465332,39.22,False,20,False,2024-04-21 20:38:32.429677
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+79,0,81.9163818359375,21.5052604675293,39.22,False,24,False,2024-04-21 21:38:32.687907
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+80,0,81.5030212402344,21.69189453125,39.22,False,24,False,2024-04-21 22:38:32.898466
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+81,0,81.247932434082,21.8947410583496,39.22,False,24,False,2024-04-21 23:38:33.352608
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+82,0,81.013786315918,21.617317199707,39.22,True,28,False,2024-04-22 00:38:33.598270
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+83,0,80.761100769043,21.6853141784668,39.22,True,32,False,2024-04-22 01:38:33.685634
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+84,0,80.4105682373047,21.7183113098145,39.22,False,36,False,2024-04-22 02:38:33.807444
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+85,0,80.1657791137695,21.7400550842285,39.22,False,40,False,2024-04-22 03:38:33.955512
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+86,0,80.3209609985352,21.8197822570801,39.22,False,44,False,2024-04-22 04:38:34.033433
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+87,0,81.0117263793945,21.6108322143555,39.22,True,48,False,2024-04-22 05:38:34.163024
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+88,28.63,81.8844528198242,21.1206436157227,39.22,True,52,False,2024-04-22 06:38:34.271210
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+89,55.69,81.9747467041016,21.1380004882812,39.22,False,56,False,2024-04-22 07:38:35.087140
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+90,69.02,82.5961608886719,20.766544342041,39.22,False,60,False,2024-04-22 08:38:35.591604
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+91,81.18,82.2016830444336,21.1862564086914,39.22,False,60,False,2024-04-22 09:38:36.116023
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+92,84.71,82.3915405273437,21.2373733520508,39.22,False,64,False,2024-04-22 10:38:36.942885
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+93,93.73,82.7547760009766,21.376895904541,39.22,False,68,False,2024-04-22 11:38:37.825951
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+94,96.08,82.9865188598633,21.680736541748,39.22,False,68,False,2024-04-22 12:38:39.047325
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+95,93.33,83.3202285766602,21.8771934509277,39.22,False,72,False,2024-04-22 13:38:40.207486
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+96,95.29,83.423225402832,21.2042808532715,39.22,False,72,False,2024-04-22 14:38:40.186543
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+97,83.92,83.4623641967773,20.8891868591309,39.22,False,72,False,2024-04-22 15:38:40.356464
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+98,85.88,83.0569000244141,20.9568977355957,39.22,True,76,False,2024-04-22 16:38:41.263472
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+99,79.61,82.6627655029297,21.0165023803711,39.61,True,80,False,2024-04-22 17:38:42.289009
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+100,81.18,82.5899810791016,20.7273483276367,39.22,True,84,False,2024-04-22 18:38:43.372011
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+101,25.1,82.8807754516602,20.1767921447754,39.22,True,88,False,2024-04-22 19:38:43.969038
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+102,0,82.6792449951172,20.2304840087891,39.22,True,92,False,2024-04-22 20:38:45.099463
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+103,0,82.4227828979492,20.2243804931641,39.22,True,96,False,2024-04-22 21:38:46.085168
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+104,0,82.0537109375,21.4771270751953,39.22,True,100,False,2024-04-22 22:38:46.743345
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+105,0,81.8971557617187,21.0280418395996,39.22,True,104,False,2024-04-22 23:38:47.128863
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+106,0,81.7653198242187,21.8153953552246,39.22,True,104,False,2024-04-23 00:38:47.756042
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+107,0,81.4655990600586,21.8140602111816,39.22,True,104,False,2024-04-23 01:38:48.507065
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+108,0,81.1538619995117,21.180248260498,39.22,True,104,False,2024-04-23 02:38:49.178586
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+109,0,80.9612579345703,22.1840858459473,39.61,True,104,False,2024-04-23 03:38:49.867693
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+110,0,80.8682174682617,21.1507797241211,39.22,True,104,False,2024-04-23 04:38:50.607793
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+111,0,81.6255874633789,20.1589584350586,39.22,True,104,False,2024-04-23 05:38:51.277123
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+112,28.24,81.7725296020508,19.5891380310059,39.22,True,104,False,2024-04-23 06:38:51.971735
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+113,77.25,82.1398849487305,19.1710472106934,39.22,True,104,False,2024-04-23 07:38:52.810240
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+114,97.25,82.727653503418,19.690990447998,39.61,True,104,False,2024-04-23 08:38:53.958952
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+115,97.65,83.1389541625977,19.9670791625977,39.61,True,104,False,2024-04-23 09:38:54.917608
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+116,96.86,83.5351486206055,20.143985748291,39.61,True,104,False,2024-04-23 10:38:55.034349
+Packet,Light,Temperature,humidity,Moisture,Water Level,Pump Time,PumpRunning,CurrentTime
+117,96.86,82.8443832397461,20.2638626098633,39.61,True,104,False,2024-04-23 11:38:56.024923
